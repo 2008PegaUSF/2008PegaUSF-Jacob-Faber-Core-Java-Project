@@ -169,21 +169,37 @@ public class Tester {
 	//	in creating and using interfaces.
 	@Test
 	public void TestQ15Add() {
+		System.out.println("==] Test Q15: Add [==");
+		System.out.println("Input: -5, 8");
+		System.out.println("Expected result: 3");
+		System.out.println("Result: " + q15i.add(-5, 8));
 		Assert.assertEquals(3, q15i.add(-5, 8));
 	}
 	
 	@Test
 	public void TestQ15Subtract() {
+		System.out.println("==] Test Q15: Subtract [==");
+		System.out.println("Input: -5, 8");
+		System.out.println("Expected result: -13");
+		System.out.println("Result: " + q15i.subtract(-5, 8));
 		Assert.assertEquals(-13, q15i.subtract(-5, 8));
 	}
 	
 	@Test
 	public void TestQ15Multiply() {
+		System.out.println("==] Test Q15: Multiply [==");
+		System.out.println("Input: -5, 8");
+		System.out.println("Expected result:-40");
+		System.out.println("Result: " + q15i.multiply(-5, 8));
 		Assert.assertEquals(-40, q15i.multiply(-5, 8));
 	}
 	
 	@Test
 	public void TestQ15Divide() {
+		System.out.println("==] Test Q15: Divide [==");
+		System.out.println("Input: 25, 5");
+		System.out.println("Expected result: 5");
+		System.out.println("Result: " + q15i.divide(25, 5));
 		Assert.assertEquals(5, q15i.divide(25, 5));
 	}
 	
@@ -201,24 +217,40 @@ public class Tester {
 	
 	//Q18's containsUppercaseLetters should return true if a given string contains uppercase characters, or false if it does not.
 	@Test
-	public void TestQ18containsUppercaseStringTrue() {
+	public void TestQ18containsUppercaseLettersTrue() {
+		System.out.println("==] Test Q18: containsUppercaseLetters [==");
+		System.out.println("Input: helloWorld");
+		System.out.println("Expected result: true");
+		System.out.println("Result: " + q18s.containsUppercaseLetters("helloWorld"));
 		Assert.assertTrue(q18s.containsUppercaseLetters("helloWorld"));
 	}
 	
 	@Test
-	public void TestQ18containsUppercaseStringFalse() {
+	public void TestQ18containsUppercaseLettersFalse() {
+		System.out.println("==] Test Q18: containsUppercaseString [==");
+		System.out.println("Input: helloworld");
+		System.out.println("Expected result: false");
+		System.out.println("Result: " + q18s.containsUppercaseLetters("helloworld"));
 		Assert.assertFalse(q18s.containsUppercaseLetters("helloworld"));
 	}
 	
 	//Q18's toUpperCase should return a string that converts lowercase letters a given string to uppercase.
 	@Test
 	public void TestQ18toUpperCase() {
+		System.out.println("==] Test Q18: toUpperCase [==");
+		System.out.println("Input: helloworld");
+		System.out.println("Expected result: HELLOWORLD");
+		System.out.println("Result: " + q18s.toUpperCase("helloworld"));
 		Assert.assertEquals("HELLOWORLD", q18s.toUpperCase("helloworld"));
 	}
 	
 	//Q18's toIntPlusTen should return an int of a given string that represents an int, plus ten.
 	@Test
 	public void TestQ18toIntPlusTen() {
+		System.out.println("==] Test Q18: toIntPlusTen [==");
+		System.out.println("Input: \"15\"");
+		System.out.println("Expected result: 25");
+		System.out.println("Result: " + q18s.toIntPlusTen("15"));
 		Assert.assertEquals(25, q18s.toIntPlusTen("15"));
 	}
 	
